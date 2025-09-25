@@ -1,0 +1,234 @@
+{
+  "name": "rpg-fixed-comments",
+  "displayName": "RPG Fixed Comments",
+  "description": "Toggle comments in column 7 for RPG, RPGLE, PF, LF, DSPF files.",
+  "version": "0.1.0",
+  "publisher": "Chri-Masi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChriMasi/RPG-Fixed-Comments"
+  },
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:commentirpg.toggleColumn7Comment",
+    "onCommand:commentirpg.insertStars3",
+    "onCommand:commentirpg.clearStars",
+    "onCommand:commentirpg.selectionToStars"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "commentirpg.toggleColumn7Comment",
+        "title": "Toggle comment (colonna 7)"
+      },
+      {
+        "command": "commentirpg.insertStars2",
+        "title": "Inserisci 2 asterischi (colonna 7)"
+      },
+      {
+        "command": "commentirpg.insertStars3",
+        "title": "Inserisci 3 asterischi (colonna 7)"
+      },
+      {
+        "command": "commentirpg.insertStars4",
+        "title": "Inserisci 4 asterischi (colonna 7)"
+      },
+      {
+        "command": "commentirpg.insertStars5",
+        "title": "Inserisci 5 asterischi (colonna 7)"
+      },
+      {
+        "command": "commentirpg.insertStars6",
+        "title": "Inserisci 6 asterischi (colonna 7)"
+      },
+      {
+        "command": "commentirpg.insertStars7",
+        "title": "Inserisci 7 asterischi (colonna 7)"
+      },
+      {
+        "command": "commentirpg.insertStars8",
+        "title": "Inserisci 8 asterischi (colonna 7)"
+      },
+      {
+        "command": "commentirpg.insertStars9",
+        "title": "Inserisci 9 asterischi (colonna 7)"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "commentirpg.selectionToStars",
+        "key": "ctrl+alt+numpad_multiply",
+        "when": "editorTextFocus && (editorLangId == rpg || editorLangId == rpgle || editorLangId == lf || editorLangId == dspf)"
+      },
+      {
+        "command": "commentirpg.toggleColumn7Comment",
+        "key": "ctrl+oem_2",
+        "when": "editorTextFocus && (editorLangId == rpg || editorLangId == rpgle || editorLangId == lf || editorLangId == dspf)"
+      },
+      {
+        "command": "commentirpg.clearStars",
+        "key": "ctrl+numpad_multiply 0",
+        "when": "editorTextFocus && (editorLangId == rpg || editorLangId == rpgle || editorLangId == lf || editorLangId == dspf)"
+      },
+      {
+        "command": "commentirpg.clearStars",
+        "key": "ctrl+numpad_multiply numpad0",
+        "when": "editorTextFocus && (editorLangId == rpg || editorLangId == rpgle || editorLangId == lf || editorLangId == dspf)"
+      },
+      {
+        "command": "commentirpg.insertStars2",
+        "key": "ctrl+numpad_multiply 2",
+        "when": "editorTextFocus && (editorLangId == rpg || editorLangId == rpgle || editorLangId == lf || editorLangId == dspf)"
+      },
+      {
+        "command": "commentirpg.insertStars2",
+        "key": "ctrl+numpad_multiply numpad2",
+        "when": "editorTextFocus && (editorLangId == rpg || editorLangId == rpgle || editorLangId == lf || editorLangId == dspf)"
+      },
+      {
+        "command": "commentirpg.insertStars3",
+        "key": "ctrl+numpad_multiply 3",
+        "when": "editorTextFocus && (editorLangId == rpg || editorLangId == rpgle || editorLangId == lf || editorLangId == dspf)"
+      },
+      {
+        "command": "commentirpg.insertStars3",
+        "key": "ctrl+numpad_multiply numpad3",
+        "when": "editorTextFocus && (editorLangId == rpg || editorLangId == rpgle || editorLangId == lf || editorLangId == dspf)"
+      },
+      {
+        "command": "commentirpg.insertStars4",
+        "key": "ctrl+numpad_multiply 4",
+        "when": "editorTextFocus && (editorLangId == rpg || editorLangId == rpgle || editorLangId == lf || editorLangId == dspf)"
+      },
+      {
+        "command": "commentirpg.insertStars4",
+        "key": "ctrl+numpad_multiply numpad4",
+        "when": "editorTextFocus && (editorLangId == rpg || editorLangId == rpgle || editorLangId == lf || editorLangId == dspf)"
+      },
+      {
+        "command": "commentirpg.insertStars5",
+        "key": "ctrl+numpad_multiply 5",
+        "when": "editorTextFocus && (editorLangId == rpg || editorLangId == rpgle || editorLangId == lf || editorLangId == dspf)"
+      },
+      {
+        "command": "commentirpg.insertStars5",
+        "key": "ctrl+numpad_multiply numpad5",
+        "when": "editorTextFocus && (editorLangId == rpg || editorLangId == rpgle || editorLangId == lf || editorLangId == dspf)"
+      },
+      {
+        "command": "commentirpg.insertStars6",
+        "key": "ctrl+numpad_multiply 6",
+        "when": "editorTextFocus && (editorLangId == rpg || editorLangId == rpgle || editorLangId == lf || editorLangId == dspf)"
+      },
+      {
+        "command": "commentirpg.insertStars6",
+        "key": "ctrl+numpad_multiply numpad6",
+        "when": "editorTextFocus && (editorLangId == rpg || editorLangId == rpgle || editorLangId == lf || editorLangId == dspf)"
+      },
+      {
+        "command": "commentirpg.insertStars7",
+        "key": "ctrl+numpad_multiply 7",
+        "when": "editorTextFocus && (editorLangId == rpg || editorLangId == rpgle || editorLangId == lf || editorLangId == dspf)"
+      },
+      {
+        "command": "commentirpg.insertStars7",
+        "key": "ctrl+numpad_multiply numpad7",
+        "when": "editorTextFocus && (editorLangId == rpg || editorLangId == rpgle || editorLangId == lf || editorLangId == dspf)"
+      },
+      {
+        "command": "commentirpg.insertStars8",
+        "key": "ctrl+numpad_multiply 8",
+        "when": "editorTextFocus && (editorLangId == rpg || editorLangId == rpgle || editorLangId == lf || editorLangId == dspf)"
+      },
+      {
+        "command": "commentirpg.insertStars8",
+        "key": "ctrl+numpad_multiply numpad8",
+        "when": "editorTextFocus && (editorLangId == rpg || editorLangId == rpgle || editorLangId == lf || editorLangId == dspf)"
+      },
+      {
+        "command": "commentirpg.insertStars9",
+        "key": "ctrl+numpad_multiply 9",
+        "when": "editorTextFocus && (editorLangId == rpg || editorLangId == rpgle || editorLangId == lf || editorLangId == dspf)"
+      },
+      {
+        "command": "commentirpg.insertStars9",
+        "key": "ctrl+numpad_multiply numpad9",
+        "when": "editorTextFocus && (editorLangId == rpg || editorLangId == rpgle || editorLangId == lf || editorLangId == dspf)"
+      }
+    ],
+  "languages": [
+      {
+        "id": "rpg",
+        "aliases": [
+          "RPG"
+        ],
+        "extensions": [
+          ".rpg"
+        ]
+      },
+      {
+        "id": "rpgle",
+        "aliases": [
+          "RPGLE"
+        ],
+        "extensions": [
+          ".rpgle"
+        ]
+      },
+      {
+        "id": "rpg4",
+        "aliases": [
+          "RPG IV"
+        ],
+        "extensions": [
+          ".rpg4",
+          ".rpgm"
+        ]
+      },
+      {
+        "id": "pf",
+        "aliases": [
+          "PF"
+        ],
+        "extensions": [
+          ".pf"
+        ]
+      },
+      {
+        "id": "lf",
+        "aliases": [
+          "LF"
+        ],
+        "extensions": [
+          ".lf"
+        ]
+      },
+      {
+        "id": "dspf",
+        "aliases": [
+          "DSPF"
+        ],
+        "extensions": [
+          ".dspf",
+          ".dspfa"
+        ]
+      }
+    ],
+    "configuration": {
+      "title": "Commenti RPG",
+      "properties": {
+        "commentirpg.fullUniversalCleaner": {
+          "type": "boolean",
+          "default": false,
+          "description": "[IT] Se attivo, i comandi di pulizia (* toggle, clearStars) rimuovono tutti gli asterischi consecutivi dalla colonna 7 fino al primo carattere non '*'. ATTENZIONE: potrebbe interferire con righe speciali come *INZSR o *PSSR se costituite da soli asterischi prima del codice.\n[EN] If enabled, cleaning commands (* toggle, clearStars) will remove all consecutive asterisks from column 7 up to the first non-'*' character. WARNING: this may interfere with special lines like *INZSR or *PSSR if they are made up of only asterisks before the code."
+        }
+      }
+    }
+  }
+}
